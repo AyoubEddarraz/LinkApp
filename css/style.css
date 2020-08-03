@@ -1,0 +1,457 @@
+/* Style General */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    overflow: hidden auto;
+    font-family: 'Pragati Narrow', sans-serif;
+    transition: background 1s ease-in-out;
+}
+
+.hero-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+/* End Style General */
+
+/* Font Of Google Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
+
+/* End Font Of Google Font  */
+
+
+/* Settings Box */
+
+.settingsBox{
+    position: absolute;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 5px black;
+    transition: left .5s ease-in-out;
+    z-index: 15;
+}
+
+.settingsBoxShow{
+    left: 0;
+}
+
+.settingsBox .iconeSettingsBox{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: -35px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.settingsBox .changeAudio{
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    text-align: center;
+}
+
+.changeAudio h3{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 1rem 0;
+}
+
+.boxColor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.colorBlack , .colorWhite{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+#ChangeColor{
+    background: black;
+}
+
+#ChangeColor2{
+    background: white;
+}
+
+.colorBlack:hover, 
+.colorWhite:hover{
+    transform: scale(1.1);
+}
+
+
+.settingsBox .created{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* End Settings Box */
+
+/* Section Rappelle Task */
+
+.rappelleTask{
+    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+}
+
+.rappelleTaskContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.rappelleTaskContent .iconeRappelle{
+    font-size: 2rem;
+    color: #00a8ff;
+}
+
+.rappelleTaskContent h2{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.rappelleTaskContent button{
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: #f53b57;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+/* End Section Rappelle Task */
+
+/* Section Element Already Exsiste */
+
+.exsiste{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50% , -10%);
+    position: fixed;
+    width: 30%;
+    padding: .5rem 0;
+    text-align: center;
+    background: #f53b57;
+    background: #4cd137;
+    color: white;
+    font-size: .8rem;
+    border-radius: 9999px;
+    transition: top .5s ease-in-out;
+    z-index: 15;
+}
+
+.showmsgNotExsiste{
+    top: 10%;
+}
+
+/* End Section Element Already Exsiste */
+
+/* section of bar info task */
+
+.info-task{
+    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+}
+
+.showAsk{
+    transform: scale(1);
+}
+
+.info-task .infoTaskContainer{
+    padding: 2rem 5rem;
+    background: white;
+    border-radius: 5px;
+    color: #f53b57;
+}
+
+.infoTaskContainer .ask{
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    font-weight: bold;    
+}
+
+.infoTaskContainer .ask .parte1,
+.infoTaskContainer .ask .parte2{
+    width: 50%;
+    color: black;
+}
+
+.inputTask input{
+    border: none;
+    background: #dcdde186;
+    height: 25px;
+    border-radius: 9999px;
+    padding: .5rem;
+}
+
+.SaveCansel button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 9999px;
+    margin: .3rem 0;
+    cursor: pointer;
+}
+
+.SaveCansel button:nth-child(1){
+    background: #4cd137;
+}
+
+.SaveCansel button:nth-child(2){
+    background: #f53b57;
+}
+
+/* End section of bar info task */
+
+
+/* Section Header */
+
+header{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 1rem;
+}
+
+/* End Section Header */
+
+/* Section Of background And button Add Task */
+
+.button-ad-task{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+}
+
+.button-ad-task button{
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.button-ad-task button:hover{
+    color: #4cd137;
+}
+
+/* End Section Of background And button Add Task */
+
+/* Section of for Show All Task */
+
+.show-task-container{
+    width: 50%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    background-color: #dcdde186;
+    border-radius: 5px;
+}
+
+.show-task-container .task{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.task span{
+    margin: 0 .5rem;
+    text-align: center;
+}
+
+.task span:nth-child(1){
+    width: 5%;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icone{
+    visibility: hidden;
+}
+
+.task span:nth-child(2){
+    width: 75%;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.623);
+    font-size: .9rem;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.task span:nth-child(3){
+    width: 15%;
+    background: #f53b57;
+    border-radius: 9999px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.complatedTask{
+    text-decoration: line-through;
+}
+
+/* .visibilityIcone{
+    visibility: visible;
+} */
+
+/* End Section of for Show All Task */
+
+/* Section of State Of task */
+
+.show-task-case{
+    width: 50%;
+    height: auto;
+    margin: 1rem auto;
+    background: white;
+    box-shadow: 0 0 3px 1px black;
+    display: flex;
+    border-radius: 5px;
+}
+
+.show-task-case div{
+    padding: .5rem 1rem;
+}
+
+.show-task-case div span{
+    background: #4cd137;
+    color: white;
+    font-size: .8rem;
+    padding: .2rem;
+    border-radius: 50%;
+}
+
+.show-task-case div:nth-child(1){
+    width: 50%;
+}
+
+.show-task-case div:nth-child(2){
+    width: 50%;
+    text-align: right;
+}
+
+/* End Section of State Of task */
+
+
+/* Media Query Section */
+
+@media screen and (max-width : 480px) and (max-width : 786px){
+    .show-task-container{
+        width: 95%;
+    }
+
+    .show-task-case{
+        width: 95%;
+    }
+
+    .task span:nth-child(1){
+        width: 10%;
+    }
+
+    .task span:nth-child(2){
+        width: 75%;
+    }
+
+    .task span:nth-child(3){
+        width: 15%;
+        font-size: .7rem;
+    }
+
+    .exsiste{
+        width: 60%;
+    }
+
+    .settingsBox .iconeSettingsBox{
+        top: 3%;
+    }
+
+    .infoTaskContainer .ask .parte1,
+    .infoTaskContainer .ask .parte2{
+    width: 100%;
+    }
+}
+
+/* Media Query Section */

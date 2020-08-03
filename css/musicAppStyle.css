@@ -1,0 +1,235 @@
+/* Style Géneral */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    overflow: hidden auto;
+    font-family: 'Pragati Narrow', sans-serif;
+    transition: background 1s ease-in-out;
+    /* background: red; */
+}
+
+.hero-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.center-with-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Style Géneral */
+
+/* Home page  */
+
+.MusicHomePage{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    margin-bottom: 1rem;
+}
+
+.MusicHomePage img{
+    position: absolute;
+    bottom: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.MusicHomePage h1{
+    font-size: 1.2rem;
+    font-family: 'Pacifico', cursive;
+    top: 30%;
+    background: white;
+    padding: .5rem 2rem;
+    border-radius: 9999px;
+}
+
+/* Home page */
+
+
+/* Section add Music */
+
+.addMusic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    box-shadow: 0 0 5px black;
+    margin-bottom: 5rem;
+}
+
+.addMusic span{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Modal Add music */
+
+.addmusicModal{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
+}
+
+.addmusicModal .modal{
+    position: relative;
+    background: white;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.modal #closeAddMusic{
+    position: absolute;
+    right: -35px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: grey;
+    cursor: pointer;
+}
+
+.modal input , .modal button{
+    display: block;
+    margin: 1rem auto;
+}
+
+.modal input{
+    margin-top: 2rem;
+    width: 80%;
+    border-radius: 9999px;
+    border: none;
+    padding: .5rem;
+    background: rgba(128, 128, 128, 0.4);
+}
+
+.modal button{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 28%, rgba(76,209,55,1) 100%);
+    border-radius: 9999px;
+    padding: .5rem 1rem;
+    border: none;
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* End Modal Add Music */
+
+/* End Section add Music */
+
+/* Scetion Music */
+
+.Music, 
+.favorite{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background: #dfe4ea;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Music .musicplace , .favorite .musicplace{
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    background: white;
+    padding: .5rem 0;
+    border-radius: 9999px;
+}
+
+.musicplace > span , .favorite > span{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 50%;
+    margin: 0 .3rem;
+    cursor: pointer;
+}
+
+.musicplace #music , .favorite #music{
+    color: #0be881;
+}
+
+.musicplace input[type = "range"] , .favorite input[type = "range"]{
+    cursor: pointer;
+}
+
+.musicplace #nameMusic , .favorite #nameMusic{
+    width: 350px;
+    height: 25px;
+    line-height: 25px;
+    font-size: .9rem;
+    font-weight: bold;
+    border-radius: 9999px;
+}
+
+.musicplace #addFavoriteMusic , .favorite #addFavoriteMusic{
+    color: white;
+}
+
+.musicplace #removeMusic , .favorite #removeMusic{
+    color: white;
+    background: #f53b57;
+}
+
+
+/* End Scetion Music */
+
+
+/* Favorite */
+
+.favorite{
+    background: #dfe4ea;
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+
+.favorite > div{
+    margin: 1rem auto;
+    width: 100px;
+    height: 20px;
+    background: green;
+}
+
+.favorite h3{
+    text-align: center;
+    padding: 2rem 0;
+}
+/* End Favorite */

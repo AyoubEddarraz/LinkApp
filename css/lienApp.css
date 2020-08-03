@@ -1,0 +1,304 @@
+/* Body */
+
+body{
+    background: url("../img/back.png");
+}
+
+.MusicHomePage{
+    background: url("../img/back.png") !important;
+}
+
+/* End body */
+
+/* Section of add list or lien */
+
+.homePageAllSection{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white !important;
+}
+
+.hrHome{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    margin-bottom: 2.5rem;
+}
+
+.addSection{
+    width: 50%;
+    height: auto;
+    background: #dfe4ea;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.addSection > div{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 1rem auto;
+    /* background: #ff4757; */
+    background: white;
+    border-radius: 9999px;
+    font-size: .9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addSection > div:nth-child(2){
+    /* background: #2ed573; */
+    color: white;
+    background: url("../img/back.png");
+}
+
+/* End Section of add list or lien */
+
+/* Save button */
+
+#save{
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50% , 0);
+    /* background: #dfe4ea; */
+    background: url("../img/back.png");
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    animation: animesavebtn 3s ease-in-out infinite;
+}
+
+#save i{
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* End save button */
+
+/* Creer list */
+
+.listshow{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform .2s ease-in-out;
+}
+
+
+.listshow .list{
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.list .closeicone{
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 30px;
+    height: 30px;
+    background: #dfe4ea;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list input , .list button , .list select{
+    display: block;
+    margin: 1rem auto !important;
+}
+
+.list input{
+    width: 90%;
+    height: 30px;
+    padding: .5rem 1rem;
+    border-radius: 9999px;
+    border: none;
+    background: rgba(156, 156, 156, 0.3);
+    box-shadow: 0 0 1px grey inset;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.list select{
+    width: 70%;
+}
+
+.list button{
+    width: 120px;
+    padding: .5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    /* background: #2ed573; */
+    background: url("../img/back.png");
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* End Creer list */
+
+/* Global List */
+
+.listlinks{
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem auto;
+    background: #dfe4ea;
+    border-radius: 10px;
+}
+
+.listlinks > h2{
+    position: relative;
+    text-align: center;
+    width: max-content;
+    padding: .3rem 1.5rem;
+    /* background: #2ed573; */
+    /* background: #2ed573; */
+    background: url("../img/back.png");
+    color: white;
+    border-radius: 9999px;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    width: 50%;
+    overflow: hidden;
+}
+
+.listlinks > h2 > i{
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.listlinks > h2 > i:hover{
+    color: #ff4757;
+}
+
+.listlinks .lien{
+    width: 95%;
+    height: auto;
+    padding: .5rem 1rem;
+    background: white;
+    margin: 1rem auto;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lien > div{
+    margin: 0 5px;
+}
+
+#iconelink{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #dfe4ea;
+    cursor: pointer;
+}
+
+#link{
+    width: 75%;
+    height: 30px;
+    line-height: 30px;
+    background: #dfe4ea;
+    border-radius: 9999px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#link a{
+    font-size: .9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#removelink{
+    width: 10%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 9999px;
+    text-align: center;
+    background: #ff4757;
+    color: white;
+    cursor: pointer;
+}
+
+/* End Global List */
+
+/* Alert */
+
+#alert{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , 0);
+    width: max-content;
+    padding: 0 2rem;
+    height: 30px;
+    background: #ff4757;
+    color: white;
+    border-radius: 9999px;
+    text-align: center;
+    line-height: 30px;
+    font-size: .9rem;
+    font-weight: bold; 
+    z-index: 1000;
+    animation: alertanime 5s ease-in-out;
+}
+
+@keyframes alertanime{
+    0%{
+        margin: -5rem 0;
+    }
+    
+    20%{
+        margin: 1rem 0;
+    }
+
+    90%{
+        margin: 1rem 0;
+    }
+
+    100%{
+        margin: -5rem 0;
+    }
+}
+
+/* End Alert */
